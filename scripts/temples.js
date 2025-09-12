@@ -1,12 +1,10 @@
-const hamButton = document.querySelector("#menu");
+const menuButton = document.querySelector("#menu");
 const navigation = document.querySelector(".navigation");
 
-hamButton.addEventListener("click", () => {
+menuButton.addEventListener("click", () => {
   navigation.classList.toggle("open");
-  hamButton.classList.toggle("open");
+  menuButton.classList.toggle("open");
 });
 
-document.querySelector("#currentyear").textContent = new Date().getFullYear();
-document.querySelector(
-  "#lastModified"
-).textContent = `Last Modification: ${document.lastModified}`;
+document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("lastModified").textContent = document.lastModified;

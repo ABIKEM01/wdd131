@@ -4,24 +4,32 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
 header {
-  background: purple;
+  background: #003366;
   color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
 }
 
 #menu {
-  font-size: 2rem;
-  border: none;
+  font-size: 1.5rem;
   background: none;
+  border: none;
   color: white;
-  cursor: pointer;
   position: absolute;
-  right: 1rem;
   top: 1rem;
+  right: 1rem;
 }
 
 #menu::before {
@@ -32,25 +40,23 @@ header {
   content: "✖";
 }
 
-.navigation {
+nav ul {
+  list-style: none;
+  background: #003366;
   display: flex;
   flex-direction: column;
-  list-style: none;
-  background: purple;
-}
-
-.navigation a {
-  display: none;
-  padding: 1rem;
-  color: white;
-  text-decoration: none;
   text-align: center;
 }
 
-.navigation a:hover {
-  background: white;
-  color: purple;
-  font-weight: bold;
+nav ul li a {
+  display: none;
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background: #0055aa;
 }
 
 .open a {
@@ -58,8 +64,14 @@ header {
 }
 
 main {
-  max-width: 800px;
-  margin: 1rem auto;
+  max-width: 100%;
+  margin: 1rem;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #003366;
 }
 
 .gallery {
@@ -68,19 +80,24 @@ main {
   gap: 1rem;
 }
 
-figure {
+.gallery figure {
+  background: white;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
   text-align: center;
 }
 
-img {
-  width: 100%;
+.gallery img {
+  max-width: 100%;
   height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 footer {
-  background: purple;
-  color: white;
   text-align: center;
   padding: 1rem;
-  margin-top: 2rem;
+  background: #003366;
+  color: white;
+  margin-top: 1rem;
 }
