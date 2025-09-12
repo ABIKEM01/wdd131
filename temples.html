@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temple Album</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/temples.css" />
+    <link rel="stylesheet" href="styles/temples-large.css" />
+    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Temple Album</h1>
+      <button id="menu"></button>
+      <nav>
+        <ul class="navigation">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Old</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Large</a></li>
+          <li><a href="#">Small</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Home</h1>
+      <section class="gallery">
+        <figure>
+          <img src="images/temple1.jpeg" alt="San Diego California Temple" />
+          <figcaption>San Diego California</figcaption>
+        </figure>
+        <figure>
+          <img src="images/temple2.jpeg" alt="Salt Lake City Utah Temple" />
+          <figcaption>Salt Lake City Utah</figcaption>
+        </figure>
+        <figure>
+          <img src="images/temple3.jpeg" alt="Accra Ghana Temple" />
+          <figcaption>Accra Ghana</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/temple4.jpeg"
+            alt="Lagos Nigeria Temple (Rendering)"
+          />
+          <figcaption>Lagos Nigeria</figcaption>
+        </figure>
+        <figure>
+          <img src="images/temple5.jpeg" alt="Nauvoo Illinois Temple" />
+          <figcaption>Nauvoo Illinois</figcaption>
+        </figure>
+        <figure>
+          <img src="images/temple6.jpeg" alt="Rome Italy Temple" />
+          <figcaption>Rome Italy</figcaption>
+        </figure>
+        <figure>
+          <img src="images/temple7.jpeg" alt="Paris France Temple" />
+          <figcaption>Paris France</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/temple8.jpeg"
+            alt="Johannesburg South Africa Temple"
+          />
+          <figcaption>Johannesburg South Africa</figcaption>
+        </figure>
+        <figure>
+          <img src="images/temple9.jpeg" alt="Copenhagen Denmark Temple" />
+          <figcaption>Copenhagen Denmark</figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy;<span id="currentyear"></span> | Abiodun Babayode | Lagos, Nigeria
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
