@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nigeria - Giant of Africa</title>
+    <meta
+      name="description"
+      content="Discover Nigeria, the most populous country in Africa with rich culture and diversity"
+    />
+    <link rel="stylesheet" href="styles/place.css" />
+    <script src="scripts/place.js" defer></script>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>Nigeria</h1>
+      <picture>
+        <source
+          media="(max-width: 600px)"
+          srcset="images/nigeria-mobile.webp"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="images/nigeria-desktop.webp"
+        />
+        <img
+          src="images/nigeria-desktop.webp"
+          alt="Nigerian landscape and culture"
+          loading="lazy"
+        />
+      </picture>
+    </header>
+
+    <main>
+      <section class="data-section">
+        <h2>Data</h2>
+        <div class="data-grid">
+          <div class="data-item">
+            <span class="label">Area:</span>
+            <span class="value">923,768 sq km</span>
+          </div>
+          <div class="data-item">
+            <span class="label">Population:</span>
+            <span class="value">218,541,212</span>
+          </div>
+          <div class="data-item">
+            <span class="label">Capital:</span>
+            <span class="value">Abuja</span>
+          </div>
+          <div class="data-item">
+            <span class="label">Languages:</span>
+            <span class="value">English, Hausa, Yoruba, Igbo</span>
+          </div>
+          <div class="data-item">
+            <span class="label">Currency:</span>
+            <span class="value">Nigerian Naira</span>
+          </div>
+          <div class="data-item">
+            <span class="label">Time Zone:</span>
+            <span class="value">UTC+1</span>
+          </div>
+          <div class="data-item">
+            <span class="label">Calling Code:</span>
+            <span class="value">+234</span>
+          </div>
+          <div class="data-item">
+            <span class="label">Internet TLD:</span>
+            <span class="value">.ng</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="weather-section">
+        <h2>Weather</h2>
+        <div class="weather-info">
+          <div class="weather-icon-mobile">
+            <img
+              src="images/weather-icon.svg"
+              alt="Partly cloudy weather"
+              class="weather-svg"
+            />
+          </div>
+          <div class="weather-details">
+            <div class="weather-item">
+              <span class="label">Temperature:</span>
+              <span class="value" id="temperature">28 °C</span>
+            </div>
+            <div class="weather-item">
+              <span class="label">Conditions:</span>
+              <span class="value">Sunny</span>
+            </div>
+            <div class="weather-item">
+              <span class="label">Wind:</span>
+              <span class="value" id="wind-speed">3 km/h</span>
+            </div>
+            <div class="weather-item">
+              <span class="label">Wind Chill:</span>
+              <span class="value" id="windchill">N/A</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy;<span id="currentyear"></span> 🇳🇬 Abiodun Babayode 🇳🇬 Nigeria</p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+  </body>
+</html>
