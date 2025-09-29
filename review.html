@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Review Confirmation" />
+    <meta name="author" content="Abiodun Babayode" />
+    <title>Review Confirmation</title>
+    <link rel="stylesheet" href="styles/form.css" />
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        let count = localStorage.getItem("reviewCount") || 0;
+        count++;
+        localStorage.setItem("reviewCount", count);
+        document.getElementById("counter").textContent = count;
+
+        const currentYearElement = document.getElementById("currentyear");
+        const lastModifiedElement = document.getElementById("lastModified");
+
+        // Set current year
+        const currentYear = new Date().getFullYear();
+        currentYearElement.textContent = currentYear;
+
+        // Set last modified date
+        const lastModified = document.lastModified;
+        lastModifiedElement.textContent = lastModified;
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Thank You!</h1>
+    </header>
+
+    <main>
+      <p>Your review has been submitted successfully.</p>
+      <p>You have submitted <strong id="counter">0</strong> reviews so far.</p>
+      <a href="form.html">Submit another review</a>
+    </main>
+
+    <footer>
+      <p>&copy;<span id="currentyear"></span> 🌸 Abiodun Babayode 🌸 Nigeria</p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #3c003c; /* deep purple */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer {
+  background-color: #3c003c;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.review-form {
+  background: #e9dce7; /* light purple-gray */
+  padding: 1.5rem;
+  border-radius: 6px;
+  max-width: 400px;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 1rem;
+  display: block;
+}
+
+.optional {
+  font-weight: normal;
+  font-size: 0.9em;
+  color: #004080;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.features label {
+  display: block;
+  font-weight: normal;
+  margin-top: 0.3rem;
+}
+
+.rating-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.rating-group input {
+  display: none;
+}
+
+.rating-group label {
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.rating-group input:checked + label {
+  color: goldenrod;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  background: #e0e0e0;
+  color: #000;
+  border: 1px solid #aaa;
+  padding: 0.7rem;
+  margin-top: 1.2rem;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.submit-btn:hover {
+  background: #d6d6d6;
+}
