@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Servver — a service booking platform for Nigeria. Discover, compare and book trusted service workers."
+    />
+    <meta name="author" content="Abiodun Babayode" />
+    <title>Servver — Contact</title>
+    <link rel="stylesheet" href="styles/servver.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo"
+          ><img
+            src="images/servver-logo.webp"
+            alt="Servver logo"
+            width="120"
+            loading="lazy"
+        /></a>
+        <nav aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container contact-page">
+      <h1>Contact / Request Support</h1>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn primary">Send Message</button>
+        <p id="contactFeedback" role="status" aria-live="polite"></p>
+      </form>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="year"></span> 🌸 Servver Incorporated Limited 🌸 Lagos,
+        Nigeria
+      </p>
+      <p><a href="references.html">References</a></p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/servver.js"></script>
+  </body>
+</html>

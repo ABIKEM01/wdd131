@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Servver — Home</title>
+    <meta
+      name="description"
+      content="Servver — a service booking platform for Nigeria. Discover, compare and book trusted service workers."
+    />
+    <meta name="author" content="Abiodun Babayode" />
+    <link rel="stylesheet" href="styles/servver.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo" aria-label="Servver home">
+          <img
+            src="images/servver-logo.webp"
+            alt="Servver logo"
+            width="120"
+            loading="lazy"
+          />
+        </a>
+
+        <button
+          id="menuToggle"
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="mainNav"
+        >
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="hero-media">
+          <img
+            src="images/servver-hero.jpeg"
+            alt="Servver hero"
+            loading="lazy"
+          />
+        </div>
+        <div class="hero-copy">
+          <h1>A service booking platform</h1>
+          <p>
+            Discover and book verified service professionals across Nigeria —
+            plumbing, electrical, cleaning, auto, and more.
+          </p>
+          <a class="btn primary" href="services.html">Get Started</a>
+        </div>
+      </section>
+
+      <section class="features container">
+        <h2>How it works</h2>
+        <ol>
+          <li>Search services by category or location.</li>
+          <li>Compare provider profiles and reviews.</li>
+          <li>Book and pay securely.</li>
+        </ol>
+      </section>
+
+      <section class="featured container" aria-labelledby="featuredHeading">
+        <h2 id="featuredHeading">Featured Services</h2>
+        <div id="featuredList" class="card-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="year"></span> 🌸 Servver Incorporated Limited 🌸 Lagos,
+        Nigeria
+      </p>
+      <p><a href="references.html">References</a></p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/servver.js"></script>
+  </body>
+</html>
